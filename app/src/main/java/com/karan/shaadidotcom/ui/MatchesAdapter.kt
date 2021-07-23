@@ -3,7 +3,7 @@ package com.karan.shaadidotcom.ui
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.karan.shaadidotcom.MainActivityViewModel
+import com.karan.shaadidotcom.ui.viewmodel.MainActivityViewModel
 import com.karan.shaadidotcom.R
 import com.karan.shaadidotcom.model.Profile
 import java.lang.ref.WeakReference

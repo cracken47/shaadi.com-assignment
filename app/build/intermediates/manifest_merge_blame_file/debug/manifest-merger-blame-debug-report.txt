@@ -36,9 +36,9 @@
 23        android:testOnly="true"
 24        android:theme="@style/AppTheme" >
 24-->/Users/karanchauhan/StudioProjects/shaadi-demo/app/src/main/AndroidManifest.xml:15:9-40
-25        <activity android:name="com.karan.shaadidotcom.MainActivity" >
+25        <activity android:name="com.karan.shaadidotcom.ui.activity.MainActivity" >
 25-->/Users/karanchauhan/StudioProjects/shaadi-demo/app/src/main/AndroidManifest.xml:18:9-24:20
-25-->/Users/karanchauhan/StudioProjects/shaadi-demo/app/src/main/AndroidManifest.xml:18:19-69
+25-->/Users/karanchauhan/StudioProjects/shaadi-demo/app/src/main/AndroidManifest.xml:18:19-81
 26            <intent-filter>
 26-->/Users/karanchauhan/StudioProjects/shaadi-demo/app/src/main/AndroidManifest.xml:19:13-23:29
 27                <action android:name="android.intent.action.MAIN" />

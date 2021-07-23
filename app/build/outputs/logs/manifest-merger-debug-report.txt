@@ -119,10 +119,10 @@ MERGED from [com.facebook.soloader:soloader:0.9.0] /Users/karanchauhan/.gradle/c
 		ADDED from /Users/karanchauhan/StudioProjects/shaadi-demo/app/src/main/AndroidManifest.xml:15:9-40
 	android:name
 		ADDED from /Users/karanchauhan/StudioProjects/shaadi-demo/app/src/main/AndroidManifest.xml:10:9-64
-activity#com.karan.shaadidotcom.MainActivity
+activity#com.karan.shaadidotcom.ui.activity.MainActivity
 ADDED from /Users/karanchauhan/StudioProjects/shaadi-demo/app/src/main/AndroidManifest.xml:18:9-24:20
 	android:name
-		ADDED from /Users/karanchauhan/StudioProjects/shaadi-demo/app/src/main/AndroidManifest.xml:18:19-69
+		ADDED from /Users/karanchauhan/StudioProjects/shaadi-demo/app/src/main/AndroidManifest.xml:18:19-81
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
 ADDED from /Users/karanchauhan/StudioProjects/shaadi-demo/app/src/main/AndroidManifest.xml:19:13-23:29
 action#android.intent.action.MAIN
