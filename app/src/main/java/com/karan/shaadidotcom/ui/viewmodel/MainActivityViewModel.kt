@@ -1,4 +1,4 @@
-package com.karan.shaadidotcom
+package com.karan.shaadidotcom.ui.viewmodel
 
 import android.app.Application
 import androidx.lifecycle.AndroidViewModel
@@ -7,7 +7,7 @@ import androidx.lifecycle.viewModelScope
 import com.karan.shaadidotcom.daos.AppDatabase
 import com.karan.shaadidotcom.model.Profile
 import com.karan.shaadidotcom.networking.ProfileService
-import com.karan.shaadidotcom.repos.ProfileRepo
+import com.karan.shaadidotcom.repo.ProfileRepo
 import com.karan.shaadidotcom.utils.rethrowIfCancellation
 import com.karan.shaadidotcom.utils.withProgress
 import kotlinx.coroutines.launch

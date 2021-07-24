@@ -1,4 +1,4 @@
-package com.karan.shaadidotcom.repos
+package com.karan.shaadidotcom.repo
 
 import com.karan.shaadidotcom.daos.ProfileDao
 import com.karan.shaadidotcom.model.Profile

@@ -1,4 +1,4 @@
-package com.karan.shaadidotcom.ui
+package com.karan.shaadidotcom.ui.adapter
 
 import android.annotation.SuppressLint
 import android.view.View
