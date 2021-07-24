@@ -5,8 +5,8 @@ Architecture Pattern - MVVM although not used clean architecture otherwise would
 
 Have also include Base class's for activity and Viewmodel in base package , haven't used because its a very simple project . Just wanted to implement the functionalities 
 otherwise could have done 
-Dependency Injection 
-UseCases implementation
-Data binding
+Dependency Injection ,
+UseCases implementation,
+Data binding,
 View Binding 
 
