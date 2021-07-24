@@ -4,7 +4,7 @@
             "outputFile": "/Users/karanchauhan/StudioProjects/shaadi-demo/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-small-v4/values-small-v4.xml",
             "map": [
                 {
-                    "source": "/Users/karanchauhan/.gradle/caches/transforms-2/files-2.1/d43342feff984a853cf830b41af8f506/material-1.2.0/res/values-small-v4/values-small-v4.xml",
+                    "source": "/Users/karanchauhan/.gradle/caches/transforms-2/files-2.1/9c3f783fee5d2a92e969aa95fb8c719c/material-1.2.0/res/values-small-v4/values-small-v4.xml",
                     "from": {
                         "startLines": "2,3,4,5",
                         "startColumns": "4,4,4,4",

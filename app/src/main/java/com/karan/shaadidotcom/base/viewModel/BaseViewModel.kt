@@ -3,13 +3,6 @@ package com.toppr.core.base.viewModel
 import androidx.annotation.CallSuper
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import com.toppr.core.base.models.AppData
-import com.toppr.core.base.useCases.BaseUseCase
-import com.toppr.core.base.useCases.BaseUseCaseUnWrapped
-import com.toppr.core.base.useCases.BaseUseCaseUnWrappedWithInput
-import com.toppr.core.base.useCases.BaseUseCaseWithInput
-import com.toppr.core.helpers.getValue
-import com.toppr.core.helpers.listen
 import kotlinx.coroutines.*
 import kotlinx.coroutines.flow.Flow
 import kotlin.coroutines.resume
@@ -63,74 +56,7 @@ abstract class BaseViewModel : ViewModel() {
         }
     }
 
-    protected inline fun <O : AppData> fetchData(
-        useCase: BaseUseCase<O>,
-        crossinline response: (res: O?) -> Unit
-    ) {
-        ioScope.launch {
-            response(useCase.process())
-        }
-    }
 
-    protected inline fun <I : AppData,O> fetchDataUnWrapped(
-        useCase: BaseUseCaseUnWrappedWithInput<I,O>,
-        input: I,
-        crossinline response: (res: O?) -> Unit
-    ) {
-        ioScope.launch {
-            response(useCase.process(input))
-        }
-    }
-
-    protected inline fun <O> fetchDataUnWrapped(
-        useCase: BaseUseCaseUnWrapped<O>,
-        crossinline response: (res: O?) -> Unit
-    ) {
-        ioScope.launch {
-            response(useCase.process())
-        }
-    }
-
-    protected inline fun <reified O> fetchData(
-        useCase: BaseUseCaseUnWrapped<Flow<O>>,
-        crossinline response: (res: O?) -> Unit
-    ) {
-        ioScope.launch {
-            useCase.process()?.listen(this) {
-                response(it)
-            }
-        }
-    }
-
-    protected inline fun <reified O> getData(
-        useCase: BaseUseCaseUnWrapped<Flow<O>>
-    ): O? = runBlocking(ioScope.coroutineContext) {
-        suspendCoroutine { susCo ->
-            runBlocking(ioScope.coroutineContext) {
-                susCo.resume(useCase.process()?.getValue(this))
-            }
-        }
-    }
-
-    protected inline fun <I : AppData, O : AppData> fetchData(
-        useCase: BaseUseCaseWithInput<I, O>,
-        input: I,
-        crossinline response: (res: O?) -> Unit
-    ) {
-        ioScope.launch {
-            response(useCase.process(input))
-        }
-    }
-
-    protected inline fun <I : AppData, O> fetchData(
-        useCase: BaseUseCaseUnWrappedWithInput<I, O>,
-        input: I,
-        crossinline response: (res: O?) -> Unit
-    ) {
-        ioScope.launch {
-            response(useCase.process(input))
-        }
-    }
 
     @CallSuper
     override fun onCleared() {
